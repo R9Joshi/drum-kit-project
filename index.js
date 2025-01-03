@@ -3,11 +3,13 @@ for (var i = 0; i < numberOgButton; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var buttonClick = this.innerHTML;
         playSound(buttonClick);
+        buttonAnimation(buttonClick);
     });   
 }
 document.addEventListener("keydown", function(event) {
     var buttonPress = event.key; 
     playSound(buttonPress);
+    buttonAnimation(buttonClick);
 });
 
 function playSound(key){
