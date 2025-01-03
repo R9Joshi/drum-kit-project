@@ -9,7 +9,7 @@ for (var i = 0; i < numberOgButton; i++) {
 document.addEventListener("keydown", function(event) {
     var buttonPress = event.key; 
     playSound(buttonPress);
-    buttonAnimation(buttonClick);
+    buttonAnimation(buttonpress);
 });
 
 function playSound(key){
