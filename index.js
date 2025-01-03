@@ -9,7 +9,7 @@ for (var i = 0; i < numberOgButton; i++) {
 document.addEventListener("keydown", function(event) {
     var buttonPress = event.key; 
     playSound(buttonPress);
-    buttonAnimation(buttonpress);
+    buttonAnimation(buttonPress);
 });
 
 function playSound(key){
@@ -52,6 +52,7 @@ function playSound(key){
         default:console.log(buttonClick);
     }
 };
+
 function buttonAnimation (currentKey){
     var activeButton = document.querySelector("."+currentKey);
     activeButton.classList.add("pressed");
